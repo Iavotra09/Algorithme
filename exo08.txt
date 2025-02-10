@@ -1,0 +1,12 @@
+﻿Algorithme afficherUnaN
+variable N, i: entier
+
+Début
+    afficher("Pour afficher 1 à N\n");
+    afficher ("Entrez N: ");
+    lire(N);
+    pour (i<-1; i<=n; i++)
+	         afficher (i, " ");
+    finpour
+Fin
+

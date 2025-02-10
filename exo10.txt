@@ -1,0 +1,15 @@
+﻿Algorithme diviseurs
+variables n, d: entiers
+
+Début
+        afficher("Les diviseurs de n\n");
+	afficher("Entrez n: ");
+	lire(n);
+	afficher("Les diviseurs de ", n, "sont: ");
+	pour (d<-1; d<=n; d++)
+		    si (n%d=0) alors
+		    		        afficher(d, " ");
+		    finsi
+	finpour
+Fin
+

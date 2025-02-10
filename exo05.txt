@@ -1,0 +1,38 @@
+﻿Algorithme resolution2ndDegre
+Variable a, b, c, del, x1, x2 : réels
+
+Début
+  afficher("Résolution d'une équation du second degré\n");
+	afficher("Entrez a: ");
+	lire(a);
+	afficher("Entrez b: ");
+	lire(b);
+	afficher("Entrez c: ");
+	lire(c);
+	si (a=0 ET b=0) alors 
+		    afficher("Pas de solution\n");
+		    sinon
+		    si (a=0 ET b<>0) alors
+		    		     x1<-(-c/b);
+		    		     afficher("La solution est ", x1);
+		    		     sinon
+		    		     del<-(b*b)-(4*a*c);
+		    		     x1<-(-b-racine(del))/(a*2);
+                 x2<-(-b+racine(del))/(a*2);
+		    		     si(del=0) alors
+		    		             afficher("La solution est ", x1);
+		    		             sinon
+		    		             si(del>0) alors
+                                 afficher("Les solutions sont ", x1," et ", x2);
+                                 sinon
+                                 si (del<0) alors
+                                     x1<-(-b)/(2*a);
+                                     x2<-(racine(-del))/(2*a);
+                                     afficher("Les solutions sont ", x1,"-", x2,"i et ",x1,"+",x2,"i\n");
+                                 finsi
+		    		             finsi
+		    		     finsi
+		    finsi
+	finsi
+Fin
+

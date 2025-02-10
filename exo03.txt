@@ -1,0 +1,28 @@
+﻿Algorithme affectation
+variables A,B,C,D: entiers
+
+Début
+  afficher("Permutation de A et B\n");
+  afficher("Entrez A: ");
+  lire(A);
+  afficher("Entrez B: ");
+  lire(B);
+  C<-A;
+  A<-B;
+  B<-C;
+  afficher("A=", A, " et B=", B)
+ 
+  afficher("\n\nPermutation de A, B et C\n");
+  afficher("Entrez A: ");
+  lire(A);
+  afficher("Entrez B: ");
+  lire(B);
+  afficher("Entrez C: ");
+  lire(C);
+  D<-A;
+  A<-B;
+  B<-C;
+  C<-D
+  afficher("A=", A, ", B=", B," et C=", C);
+Fin
+

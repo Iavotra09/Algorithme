@@ -1,0 +1,14 @@
+﻿Algorithme sommeMoyenne
+variables n1, n2, S, M: réels 
+
+Début
+	afficher("Calcul de la somme des notes et de la moyenne\n");
+	afficher("Entrez la première note:");
+	lire(n1);
+	afficher("Entrez la seconde note:");
+	lire(n2);
+	S<-n1+n2;
+	M<-S/2;
+	afficher("Somme=",S, " ; Moyenne=",M);
+Fin
+

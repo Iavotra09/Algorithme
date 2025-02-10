@@ -1,0 +1,17 @@
+﻿Algorithme Moyenne
+Variables n1, n2, c1, c2, M: réels 
+
+Début
+	afficher("Calcul de la moyenne\n");
+	afficher("Entrez la note: ");
+	lire(n1);
+	afficher("Entrez son coefficient : ");
+	lire(c1);
+	afficher("Entrez la note suivante: ");
+	lire(n2);
+	afficher("Entrez son coefficient : ");
+	lire(c2);
+	M<-(n1+n2)/(c1+c2);
+	afficher("La moyenne est ", M);
+Fin
+

@@ -1,0 +1,15 @@
+﻿Algorithme NombrePair
+variables n, i: entiers
+
+Début
+  afficher("Les nombres pairs compris entre 1 et n\n");
+	afficher("Entrez n: ");
+	saisir(n);
+	afficher("Les nombres pairs sont: ");
+	pour (i<-1; i<=n; i++)
+		    si (i%2=0) alors
+		    		        afficher(i, " ");
+		    finsi
+	finpour
+Fin
+

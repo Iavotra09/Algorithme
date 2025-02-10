@@ -1,0 +1,15 @@
+﻿Algorithme positifnegatif
+variable nb: réel
+
+Début
+        afficher("Savoir si un nombre est positif ou négatif\n");
+	afficher("Entrez un nombre: ");
+	lire(nb);
+	si(nb<0)
+              	alors afficher ("Ce nombre est négatif.");
+	            sinon si (nb>=0) alors 
+	                       afficher ("Ce nombre est positif.");
+	                       finsi
+	finsi
+Fin
+

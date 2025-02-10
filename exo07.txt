@@ -1,0 +1,20 @@
+﻿Algorithme maximum
+variables a, b, c: reel
+
+Début
+   afficher("Trouver le maximum entre a, b et c\n");
+	afficher("Entrez a");
+	saisir(a);
+	afficher("Entrez b");
+	saisir(b);
+	afficher("Entrez c");
+	saisir(c);
+	si (a>b ET a>c) alors 
+		    afficher(a, " est le maximum\n") sinon
+		    si (b>a ET b>c) alors
+		    		        afficher(b," est le maximum\n");
+		    		        sinon afficher(c, " est le maximum\n");
+		    finsi
+	finsi
+Fin
+
