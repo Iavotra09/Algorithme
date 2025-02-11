@@ -1,0 +1,18 @@
+﻿Algorithme exo11
+variables n, mult: entiers
+
+Début
+        afficher("Calcul de factoriel\n");
+	afficher("Entrez n:");
+	lire(n);
+	afficher(n, "! = ");
+	mult<-1;
+	tantque(n>1) faire
+	   afficher("*", n);
+	   mult<-mult*n;
+	   n<-n-1;
+	fintantque
+	//la boucle se termine à 2* donc il faut afficher 1
+	afficher("1 = ", mult);
+Fin
+

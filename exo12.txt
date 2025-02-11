@@ -1,0 +1,18 @@
+﻿Algorithme sommeUnN
+variables n, S, i: entiers
+
+Début
+        afficher("Calcul de la somme de 1 jusqu'à n\n");
+	afficher("Entrez le nombre n: ");
+	lire(n);
+	S<-0;
+	pour (i<-1; i<=n; i++)
+		    afficher (i);
+		    si(i<n) alors
+		        afficher("+");
+		    finsi
+		    S<-S+i;
+	finpour
+	afficher (" = ", S);
+Fin
+

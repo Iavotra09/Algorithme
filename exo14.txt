@@ -1,0 +1,20 @@
+﻿Algorithme exo14
+variables n: entiers
+	  S, i: réel 
+
+Début
+        afficher("Calcul de la somme  1/1+1/2+...+1/n \n");
+	afficher("Entrez un nombre: ");
+	lire(n);
+	afficher("S = ");
+	S<-0;
+	pour (i<-1; i<=n; i++)
+		    afficher("1/", i);
+		    si(i<n) alors
+		        afficher("+");
+		    finsi
+		    S<-S+(1/i);
+	finpour
+	afficher (" = ", S);
+Fin
+

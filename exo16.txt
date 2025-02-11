@@ -1,0 +1,23 @@
+﻿Algorithme sommeFactoriel
+variables
+       n,i : entiers
+       M, S: réels
+
+Début
+        afficher("Calcul de la somme des factoriels\n");
+	afficher("Entrez n:");
+	lire(n);
+	afficher("S=");
+	M<-1;
+	S<-0;
+	pour (i<-1; i<=n; i++)
+		    afficher(i);
+		    si (i<n)alors
+		    		      afficher("!+");
+		    finsi
+		    M<-M*i;
+		    S<-S+M;
+	finpour
+	afficher ("! =", S);
+Fin
+

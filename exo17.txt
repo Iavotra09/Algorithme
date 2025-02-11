@@ -1,0 +1,21 @@
+﻿Algorithme SommeDF
+variables n, i: entiers
+          M, S : réels 
+Début
+        afficher("Calcul de la somme 1/1!+1/2!+...+1/n!\n");
+	afficher("Entrez un nombre: ");
+	lire(n);
+	afficher("S=");
+	M<-1;
+	S<-0;
+	pour (i<-1; i<=n; i++)
+		    afficher ("1/", i);
+		    si(i<n) alors
+		         afficher("!+");
+		    finsi
+		    M<-M*i;
+		    S<-S+(1/M);
+	finpour
+	afficher("=", S);
+Fin
+

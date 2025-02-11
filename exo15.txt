@@ -1,0 +1,24 @@
+﻿Algorithme puissanceN
+Variables n, i, S: entiers
+                   
+Début
+  afficher("Calcul de la somme des puissances\n");
+	afficher("Entrez n: ");
+	lire(n);
+	si(n<=0) alors
+	      afficher("S=1");
+	      sinon si(n=1) alors
+	            afficher("S=1+10=11");
+	            sinon si(n>1) alors
+	                  afficher("S=1+10");
+	                  S<-1+10;
+	                  pour (i<-2; i<=n; i++)
+	                  	      afficher("+10^", i);
+	                  	      S<-S+10^i;
+	                  finpour
+	                  afficher("=", S);
+	            finsi
+	      finsi
+	finsi
+Fin
+

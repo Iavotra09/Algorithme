@@ -1,0 +1,20 @@
+﻿Algorithme exo18
+variables a, b, r: entiers
+
+Début
+        afficher("Calcul du pgcd\n");
+	afficher("Entrez a:");
+	lire(a);
+	afficher("Entrez b:");
+	lire(b);
+	
+  tantque (r<>0) faire // algorithme d'Euclide, le pgcd est le dernier reste non nul
+        r<-a%b;
+        a<-b;
+        b<-r;
+	fintantque
+	
+	//b a pris la valeur du dernier reste non nul qui est le pgcd, or a<-b donc pgcd =a
+	afficher("PGCD = ",a );
+Fin
+

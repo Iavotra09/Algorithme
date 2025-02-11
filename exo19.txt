@@ -1,0 +1,21 @@
+﻿Algorithme PremierEntreEux
+variables a, b, r: entiers
+
+Début
+   afficher("Savoir si deux nombres sont premiers entre eux ou pas");
+	afficher("Entrez a:");
+	lire(a);
+	afficher("Entrez b:");
+	lire(b);
+  tantque (r<>0) faire  //calcul du pgcd
+        r<-a%b;
+        a<-b;
+        b<-r;
+	fintantque
+	
+	si a=1 alors            //premiers entre eux si pgcd=1 or pgcd=a
+		    afficher("a et b sont premiers entre eux\n");
+		    sinon afficher("a et b ne sont pas premiers entre eux\n");
+	finsi
+Fin
+
